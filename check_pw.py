@@ -29,14 +29,13 @@ try:
     check_zero = 5 / check_len
 except ZeroDivisionError:
     print("Вы ввели пустой пароль")
-    result = 0
 
 
-    try:
-        a = str(a)
-        b = 5
-        check_digit = b / a
-    except TypeError:
-        print("Ваш пароль состоит только из цифр")
+try:
+    a = str(a)
+    b = 5
+    check_digit = b / a
+except TypeError:
+    print("Ваш пароль состоит только из цифр")
 
 print ("Требования к паролю соблюдены")
