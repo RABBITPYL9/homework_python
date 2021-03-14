@@ -16,15 +16,14 @@
 # 3.
 # # Сообщение "Требования к паролю соблюдены" выводится правильно
 
-#chislo = int(5)
-
+a = input("Введите пароль: ")
+dlina = len(a)
+delenie = 1
 
 try:
-    a = input("Введите пароль: ")
-    check_len = len(a)
-    check_zero = 5 / check_len
-    a = int(a)
-
+    proverka = dlina / 1
+    opop = int(a)
+    print("В пароле только цифры")
 except ZeroDivisionError:
     print("Вы ввели пустой пароль")
 except ValueError:
@@ -34,17 +33,3 @@ except ValueError:
 else:
     print("Требования к паролю соблюдены")
 
-
-# try:
-#     a = str(a)
-#     b = 5
-#     check_digit = b / a
-# except TypeError:
-#     print("Ваш пароль состоит только из цифр")
-
-# try:
-#     a = int(a)
-#     b = 5
-#     check_digit = b / a
-# except ValueError:
-#     print("Ваш пароль состоит только из буков")
