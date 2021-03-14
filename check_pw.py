@@ -18,24 +18,33 @@
 
 #chislo = int(5)
 
-a = input("Введите пароль: ")
-#check_len = len(a)
-#print(check_len)
-#asik = 5 / check_len
-#print(asik)
 
 try:
+    a = input("Введите пароль: ")
     check_len = len(a)
     check_zero = 5 / check_len
+    a = int(a)
+
 except ZeroDivisionError:
     print("Вы ввели пустой пароль")
+except ValueError:
+    print("Вы ввели буквы в пароль")
+#except: #тут почемуто не работает
+#    print("Требования к паролю соблюдены")
+else:
+    print("Требования к паролю соблюдены")
 
 
-try:
-    a = str(a)
-    b = 5
-    check_digit = b / a
-except TypeError:
-    print("Ваш пароль состоит только из цифр")
+# try:
+#     a = str(a)
+#     b = 5
+#     check_digit = b / a
+# except TypeError:
+#     print("Ваш пароль состоит только из цифр")
 
-print ("Требования к паролю соблюдены")
+# try:
+#     a = int(a)
+#     b = 5
+#     check_digit = b / a
+# except ValueError:
+#     print("Ваш пароль состоит только из буков")
