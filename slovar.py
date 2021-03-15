@@ -13,10 +13,10 @@ user_list = ['user1','user2','user3','user4']
 
 en = input("Введите ключ (name или account): ")
 if en.lower() == 'name':
-    print("значение ключа name для юзера 1 = Иван")
-    print("значение ключа name для юзера 2 = Петр")
-    print("значение ключа name для юзера 3 = Ольга")
-    print("значение ключа name для юзера 4 = Анна")
+    print(f"значение ключа name для юзера 1 = {user1['name']}")
+    print(f"значение ключа name для юзера 1 = {user2['name']}")
+    print(f"значение ключа name для юзера 1 = {user3['name']}")
+    print(f"значение ключа name для юзера 1 = {user4['name']}")
 elif en.lower() == 'account':
     print(f"значение ключа account для юзера 1 = Иван {account1}")
     print(f"значение ключа account для юзера 2 = Петр {account2}")
@@ -24,3 +24,4 @@ elif en.lower() == 'account':
     print(f"значение ключа account для юзера 4 = Анна {account4}")
 else:
     print("Введенный ключ не найден")
+ent = input("Введите порядковый номер: ")
