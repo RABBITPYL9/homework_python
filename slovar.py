@@ -22,3 +22,5 @@ elif en.lower() == 'account':
     print(f"значение ключа account для юзера 2 = Петр {account2}")
     print(f"значение ключа account для юзера 3 = Ольга {account3}")
     print(f"значение ключа account для юзера 4 = Анна {account4}")
+else:
+    print("Введенный ключ не найден")
