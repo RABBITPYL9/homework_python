@@ -1,4 +1,5 @@
 spisok = []
+finish_spisok = []
 #генерим числа от 1000 до 20000 включительно
 diapa = 0
 for i in range(1000, 20001):
@@ -14,5 +15,14 @@ print(spisok)
 #кладя их в переменную result
 for it in spisok:
     if it%5 == 0 and it%3 ==0:
-        print(it)
+        #print(it)
+        finish_spisok.append(it)
+
+
+sum = 0
+for ih in finish_spisok:
+    sum += i
+print(sum)
+        
+
 
