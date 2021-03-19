@@ -9,14 +9,17 @@ name:Петр;gender:m;item:Кофемашина;item_cost:23500
 name:Дарья;gender:m;item:Айфон;item_cost:77900
 name:Марья;gender:m;item:Кофемашина;item_cost:23500
 name:Юлия;gender:m;item:Фитнес-браслет;item_cost:12300"""
+ 
+# for info in log.split('\n'):
+#     data = info.split(':')[3:]
+#     price = int(data.pop(-1))
+#     merchandise = ''.join(data).split(';')[0]
+#     if price < 20000:
+#         print(merchandise, price)
 
-clear_log = log.split('\n')
-slovar_clear = clear_log
-#print(clear_log)
-
-for i in clear_log:
-    #print(i)
-    finish_him = i
-    print(finish_him)
-
-
+for info in log.split('\n'):
+     data = info.split(':')[3:]
+     price = int(data.pop(-1))
+     merchandise = ''.join(data).split(';')[0]
+     if price < 13000:
+          print(merchandise, price)
