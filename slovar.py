@@ -1,4 +1,3 @@
-
 import numpy
 
 account1 = {'login':'ivan', 'password':'q1'}
